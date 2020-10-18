@@ -20,3 +20,6 @@ document.getElementById("changeGold").onclick = function(){
 document.getElementById("green-circle").style.background = 'gold';
 
 }
+
+
+window.alert("hello,hope you enjoy");
