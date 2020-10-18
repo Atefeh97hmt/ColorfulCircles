@@ -1,0 +1,165 @@
+
+.title {
+    padding: 60px;
+    text-align: center;
+    background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    color: white;
+    font-size: 30px;
+    margin-bottom: 5%;
+  }
+.red-circle {
+    background: #f0492b;
+    border-radius: 50%;
+    width: 310px;
+    height: 310px;
+    
+}
+
+.blue-circle {
+    background: #02c0ff;
+    border-radius: 50%;
+    width: 310px;
+    height: 310px;
+ 
+}
+
+
+.green-circle {
+    background: #12b812;
+    border-radius: 50%;
+    width: 310px;
+    height: 310px;
+  
+}
+
+.btn-absolute-position{
+    position: absolute;
+    top: 110%;
+    left:10%;
+    font-size: 20px;
+}
+
+.red-circle-btn-style{
+background-color: gray;
+border: 3px dotted white;
+color: white;
+}
+
+.green-circle-btn-style{
+background-color: gold;
+border: 3px dotted white;
+color: white;
+}
+
+.blue-circle-btn-style{
+background-color: deeppink ;
+border: 3px dotted white;
+color: white;
+}
+
+
+
+ @media screen and (max-width:991px) {
+    .red-circle {
+        background: #f0492b;
+        border-radius: 50%;
+        width:220px;
+        height: 220px;
+      
+    }
+    
+    .blue-circle {
+        background: #02c0ff;
+        border-radius: 50%;
+        width: 220px;
+        height: 220px;
+     
+    }
+    
+    
+    .green-circle {
+        background: #12b812;
+        border-radius: 50%;
+        width: 220px;
+        height: 220px;
+      
+    }
+    .btn-absolute-position{
+        position: absolute;
+        top: 115%;
+        left:7.5%;
+        font-size: 15px;
+    }
+} 
+
+@media screen and (max-width:767px) {
+    .red-circle {
+        background: #f0492b;
+        border-radius: 50%;
+        width:175px;
+        height: 175px;
+        
+      
+    }
+    
+    .blue-circle {
+        background: #02c0ff;
+        border-radius: 50%;
+        width: 175px;
+        height: 175px;
+       
+    }
+    
+    
+    .green-circle {
+        background: #12b812;
+        border-radius: 50%;
+        width: 175px;
+        height: 175px;
+        
+       
+    }
+    .btn-absolute-position{
+        position: absolute;
+        top: 115%;
+        left:6%;
+        font-size: 11px;
+    }
+} 
+
+@media screen and (max-width:575px) {
+    .red-circle {
+        background: #f0492b;
+        border-radius: 50%;
+        width:250px;
+        height: 250px;
+        margin-bottom: 25%;
+      
+    }
+    
+    .blue-circle {
+        background: #02c0ff;
+        border-radius: 50%;
+        width:250px;
+        height: 250px;
+       margin-bottom: 25%;
+    }
+    
+    
+    .green-circle {
+        background: #12b812;
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        
+        margin-bottom: 25%;
+       
+    }
+    .btn-absolute-position{
+        position: absolute;
+        top:85%;
+        left:15%;
+        font-size: 14px;
+    }
+} 
+
