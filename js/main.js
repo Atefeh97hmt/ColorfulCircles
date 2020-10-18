@@ -1,6 +1,6 @@
 
-
 window.alert("hello,hope you enjoy");
+
 
 
 // red circle
@@ -16,7 +16,6 @@ document.getElementById("changePink").onclick = function(){
 
     document.getElementById("blue-circle").style.background ="deeppink";
 }
-
 
 
 //green circle
