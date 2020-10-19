@@ -18,46 +18,86 @@
         <h1>colorful circles</h1>
 
     </div>
-    <!-- test commit -->
 
-    <div class="container">
-        <div class="row">
 
-            <!--  red circle change to blue    -->
+    <section class="section-style">
+        <div class="container">
+            <div class="row">
 
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 d-flex justify-content-center">
-                <div class="position-relative ">
-                    <div id="red-circle" class="red-circle"></div>
-                    <button id="changeGray" class="btn red-circle-btn-style btn-absolute-position" type="submit">click to change the color</button>
+                <!--  red circle change to blue -->
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 d-flex justify-content-center">
+                    <div class=" ">
+                        <div id="red-circle" class="red-circle"></div>
+                        <button id="changeGray" class="btn red-circle-btn-style circle-btn" type="submit">click to change the color</button>
+                    </div>
+                </div>
+
+
+                <!--  blue circle change to pink    -->
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 d-flex justify-content-center">
+                    <div class="">
+                        <div id="blue-circle" class="blue-circle"></div>
+                        <button id="changePink" class="btn blue-circle-btn-style circle-btn" type="submit">click to change the color</button>
+                    </div>
+                </div>
+
+                <!--  green circle change to gold   -->
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 d-flex justify-content-center ">
+                    <div class="">
+                        <div id="green-circle" class="green-circle"></div>
+                        <button id="changeGold" class="btn green-circle-btn-style circle-btn" type="submit">click to change the color</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="section-style">
+
+        <div class="container">
+            <div class="row">
+                <div class="rectangle-part-title">
+                    <h2>set your own width and height :) </h2>
+
+                </div>
+                <div class="col-lg-12 col-md-8 col-sm-8 col-xs-8 d-flex justify-content-center">
+                    <div id="rectangleResult" class="rectangle"></div>
+
+                </div>
+                <div class="col-lg-12 col-md-4 col-sm-4 col-xs-4 d-flex justify-content-center">
+
+
+                    <form class="rectangle-form  d-flex flex-column">
+                        <label for="width"> width in px:</label>
+                        <input type="text" id="width-input" name="width">
+                        <label for="height">Height in px:</label>
+                        <input type="text" id="height-input" name="height">
+                        <button type="button" id="change-button" class="btn change-button">change</button>
+                    </form>
                 </div>
             </div>
-
-
-            <!--  blue circle change to pink    -->
-
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 d-flex justify-content-center">
-                <div class="position-relative">
-                    <div id="blue-circle" class="blue-circle"></div>
-                    <button id="changePink" class="btn blue-circle-btn-style btn-absolute-position" type="submit">click to change the color</button>
-                </div>
-            </div>
-
-            <!--  green circle change to gold   -->
-
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 d-flex justify-content-center ">
-                <div class="position-relative">
-                    <div id="green-circle" class="green-circle"></div>
-                    <button id="changeGold" class="btn green-circle-btn-style btn-absolute-position" type="submit">click to change the color</button>
-                </div>
-            </div>
-
+        </div>
+        <div>
 
         </div>
-    </div>
+    </section>
+
+
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
+
 
 </html>
