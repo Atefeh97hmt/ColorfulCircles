@@ -26,14 +26,14 @@ document.getElementById("changeGold").onclick = function() {
 
 //rectangle width & height set
 
-const widthInput = document.getElementById('width-input');
-const heightInput = document.getElementById('height-input');
-const changeButton = document.getElementById('change-button');
+var widthInput = document.getElementById('width-input');
+var heightInput = document.getElementById('height-input');
+var changeButton = document.getElementById('change-button');
 
-const applyValues = () => {
+var applyValues = () => {
 
-    const width = widthInput.value + "px";
-    const height = heightInput.value + "px";
+    var width = widthInput.value + "px";
+    var height = heightInput.value + "px";
 
     rectangleResult.style.width = width;
     rectangleResult.style.height = height;
