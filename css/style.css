@@ -4,7 +4,7 @@
     background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
     color: white;
     font-size: 30px;
-    margin-bottom: 5%;
+  
 }
 
 .red-circle {
@@ -59,25 +59,29 @@
         width: 220px;
         height: 220px;
     }
+
     .blue-circle {
         background: #02c0ff;
         border-radius: 50%;
         width: 220px;
         height: 220px;
     }
+
     .green-circle {
         background: #12b812;
         border-radius: 50%;
         width: 220px;
         height: 220px;
     }
+
     .circle-btn {
         font-size: 15px;
         margin-left: 10%;
         margin-top: 10%;
     }
+
     .rectangle-form {
-        margin-top: 30px!important;
+        margin-top: 30px !important;
     }
 }
 
@@ -88,18 +92,21 @@
         width: 175px;
         height: 175px;
     }
+
     .blue-circle {
         background: #02c0ff;
         border-radius: 50%;
         width: 175px;
         height: 175px;
     }
+
     .green-circle {
         background: #12b812;
         border-radius: 50%;
         width: 175px;
         height: 175px;
     }
+
     .circle-btn {
         font-size: 11px;
         margin-left: 10%;
@@ -114,18 +121,21 @@
         width: 250px;
         height: 250px;
     }
+
     .blue-circle {
         background: #02c0ff;
         border-radius: 50%;
         width: 250px;
         height: 250px;
     }
+
     .green-circle {
         background: #12b812;
         border-radius: 50%;
         width: 250px;
         height: 250px;
     }
+
     .circle-btn {
         font-size: 14px;
         margin-left: 15%;
@@ -159,5 +169,44 @@
 
 .rectangle-part-title {
     text-align: center;
-    margin-top: 5%
+
+}
+
+
+.text-input-title {
+    text-align: center;
+    color: #15ca85;
+}
+
+.text-form {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.text-result {
+    text-align: center;
+    color: #0c5533;
+    font-size: 30px;
+}
+
+.save-button {
+    background-color: #0c5533;
+    color: white;
+    margin-left: .5%;
+}
+
+.btn-increment {
+    width: 3%;
+  
+}
+
+.btn-decrement {
+    width: 3%;
+ 
+}
+
+.counter-text {
+    text-align: center;
 }
