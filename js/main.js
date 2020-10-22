@@ -70,13 +70,18 @@ var btnDecrement = document.getElementById("btn-decrement");
 var number = 10;
 
 btnIncrement.addEventListener("click", function () {
-    number++;
-    counterText.innerHTML = number;
-
+    
+    if (number < 100) {
+        number++;
+        counterText.innerHTML = number;
+    }
 });
 
 btnDecrement.addEventListener("click", function () {
-    number--;
-    counterText.innerHTML = number;
+
+    if (number > 0) {
+        number--;
+        counterText.innerHTML = number;
+    }
 
 });
