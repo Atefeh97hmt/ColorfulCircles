@@ -198,15 +198,28 @@
 }
 
 .btn-increment {
-    width: 3%;
-  
+    width: 5%;
+    margin: 2%;
+    font-size: 22px;
+    border: 2px dotted black;
 }
 
 .btn-decrement {
-    width: 3%;
- 
+    width:5%;
+    margin:2%;
+    font-size: 22px;
+    border: 2px dotted black;
 }
 
 .counter-text {
     text-align: center;
+    background:  black;
+    border:3px dotted white;
+    border-radius: 50%;
+    font-size: 30px;
+    color: white;
+    width: 9%;
+    padding-top: 1.5%;
+
 }
+
