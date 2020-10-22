@@ -219,7 +219,18 @@
     font-size: 30px;
     color: white;
     width: 9%;
-    padding-top: 1.5%;
+    padding-top: 1.8%;
 
 }
 
+.counter-get-input{
+    margin-top: 2%;
+}
+.submit-button{
+    background-color: black;
+    color: white;
+    margin-left: 1%;
+}
+.submit-button:hover{
+    color: gray!important;
+}

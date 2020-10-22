@@ -67,7 +67,7 @@ var counterText = document.getElementById("counter-text");
 var btnIncrement = document.getElementById("btn-increment");
 var btnDecrement = document.getElementById("btn-decrement");
 
-var number = 10;
+var number = 4;
 
 btnIncrement.addEventListener("click", function () {
     
@@ -85,3 +85,5 @@ btnDecrement.addEventListener("click", function () {
     }
 
 });
+
+
