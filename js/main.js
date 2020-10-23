@@ -70,7 +70,7 @@ var btnDecrement = document.getElementById("btn-decrement");
 var number = 4;
 
 btnIncrement.addEventListener("click", function () {
-    
+
     if (number < 100) {
         number++;
         counterText.innerHTML = number;
