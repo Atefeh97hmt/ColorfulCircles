@@ -85,5 +85,3 @@ btnDecrement.addEventListener("click", function () {
     }
 
 });
-
-
