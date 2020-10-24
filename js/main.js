@@ -3,7 +3,7 @@
 
 
 // red circle
-document.getElementById("changeGray").onclick = function () {
+document.getElementById("changeGray").onclick = function() {
     document.getElementById("red-circle").style.background = 'gray';
 }
 
@@ -11,13 +11,13 @@ document.getElementById("changeGray").onclick = function () {
 
 
 //blue circle
-document.getElementById("changePink").onclick = function () {
+document.getElementById("changePink").onclick = function() {
     document.getElementById("blue-circle").style.background = "deeppink";
 }
 
 
 //green circle
-document.getElementById("changeGold").onclick = function () {
+document.getElementById("changeGold").onclick = function() {
     document.getElementById("green-circle").style.background = 'gold';
 
 }
@@ -63,25 +63,91 @@ saveButton.addEventListener('click', SetText);
 
 // increment & decrement counter
 
-var counterText = document.getElementById("counter-text");
+// var counterText = document.getElementById("counter-text");
+
+// var btnIncrement = document.getElementById("btn-increment");
+// var btnDecrement = document.getElementById("btn-decrement");
+
+// var number = 4;
+
+// btnIncrement.addEventListener("click", function() {
+
+//     if (number < 100) {
+//         number++;
+//         counterText.innerHTML = number;
+//     }
+
+// });
+
+// btnDecrement.addEventListener("click", function() {
+
+//     if (number > 0) {
+//         number--;
+//         counterText.innerHTML = number;
+//     }
+
+
+// });
+
+
+// var apply = () => {
+//     var submitButton = document.getElementById('submit-button');
+//     let countertext = document.querySelector(".demo");
+//     let btnDecrement = document.getElementById('btn-decrement').value;
+//     let btnincrement = document.getElementById('btn-increment').value;
+
+//     document.getElementById('btn-decrement').value = parseInt(btndecrement) + parseInt(btnincrement);
+// }
+// submitButton.addEventListener('click', apply);
+
+
+
+
+
+// increment & decrement counter
+var counterValue = document.getElementById("counter-value");
 var btnIncrement = document.getElementById("btn-increment");
 var btnDecrement = document.getElementById("btn-decrement");
+var submitButton = document.getElementById("submit-button");
+var submitButtonStatus = false;
 
-var number = 4;
+var number = -1;
 
-btnIncrement.addEventListener("click", function () {
+if (number < 100) {
+    number = number + 1;
+    counterText.innerHTML = number;
+}
 
-    if (number < 100) {
-        number++;
-        counterText.innerHTML = number;
+submitButton.addEventListener("click", function() {
+    submitButtonStatus = true;
+    counterText.innerHTML = parseInt(counterValue.value);
+});
+
+btnIncrement.addEventListener("click", function() {
+    if (submitButtonStatus === true) {
+        counterText.innerHTML =
+            parseInt(counterText.innerHTML) + parseInt(counterValue.value);
+    } else if (submitButtonStatus === false) {
+        if (number < 100) {
+            number = number + 1;
+            counterText.innerHTML = number;
+        }
     }
 });
 
-btnDecrement.addEventListener("click", function () {
-
-    if (number > 0) {
-        number--;
-        counterText.innerHTML = number;
+btnDecrement.addEventListener("click", function() {
+    if (submitButtonStatus === true) {
+        counterText.innerHTML =
+            parseInt(counterText.innerHTML) - parseInt(counterValue.value);
+    } else if (submitButtonStatus === false) {
+        if (number < 100) {
+            number = number - 1;
+            counterText.innerHTML = number;
+        }
     }
 
+    // if (number > 0) {
+    //     number = number - 1;
+    //     counterText.innerHTML = number;
+    // }
 });
