@@ -104,13 +104,13 @@ saveButton.addEventListener('click', SetText);
 
 
 
-
-
 // increment & decrement counter
-var counterValue = document.getElementById("counter-value");
+var counterValue = document.getElementById("counter-value"); //      من اضافه کردم
+
 var counterText = document.getElementById("counter-text");
 var btnIncrement = document.getElementById("btn-increment");
 var btnDecrement = document.getElementById("btn-decrement");
+
 var submitButton = document.getElementById("submit-button");
 var submitButtonStatus = false;
 
@@ -122,14 +122,18 @@ if (number < 100) {
 }
 
 submitButton.addEventListener("click", function() {
-    submitButtonStatus = true;
-    counterText.innerHTML = parseInt(counterValue.value);
+    if (counterValue.value < 100 && counterValue.value > 0) {
+        submitButtonStatus = true;
+        counterText.innerHTML = parseInt(counterValue.value);
+    }
 });
 
 btnIncrement.addEventListener("click", function() {
     if (submitButtonStatus === true) {
-        counterText.innerHTML =
-            parseInt(counterText.innerHTML) + parseInt(counterValue.value);
+        if (parseInt(counterText.innerHTML) < 100) {
+            counterText.innerHTML =
+                parseInt(counterText.innerHTML) + parseInt(counterValue.value);
+        }
     } else if (submitButtonStatus === false) {
         if (number < 100) {
             number = number + 1;
@@ -140,10 +144,12 @@ btnIncrement.addEventListener("click", function() {
 
 btnDecrement.addEventListener("click", function() {
     if (submitButtonStatus === true) {
-        counterText.innerHTML =
-            parseInt(counterText.innerHTML) - parseInt(counterValue.value);
+        if (parseInt(counterText.innerHTML) > 0) {
+            counterText.innerHTML =
+                parseInt(counterText.innerHTML) - parseInt(counterValue.value);
+        }
     } else if (submitButtonStatus === false) {
-        if (number < 100) {
+        if (number > 0) {
             number = number - 1;
             counterText.innerHTML = number;
         }
