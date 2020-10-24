@@ -121,13 +121,6 @@ if (number < 100) {
     counterText.innerHTML = number;
 }
 
-submitButton.addEventListener("click", function() {
-    if (counterValue.value < 100 && counterValue.value > 0) {
-        submitButtonStatus = true;
-        counterText.innerHTML = parseInt(counterValue.value);
-    }
-});
-
 btnIncrement.addEventListener("click", function() {
     if (submitButtonStatus === true) {
         if (parseInt(counterText.innerHTML) < 100) {
@@ -159,4 +152,12 @@ btnDecrement.addEventListener("click", function() {
     //     number = number - 1;
     //     counterText.innerHTML = number;
     // }
+});
+
+
+submitButton.addEventListener("click", function() {
+    if (counterValue.value < 100 && counterValue.value > 0) {
+        submitButtonStatus = true;
+        counterText.innerHTML = parseInt(counterValue.value);
+    }
 });
