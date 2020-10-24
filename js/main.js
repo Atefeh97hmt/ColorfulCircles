@@ -104,8 +104,11 @@ saveButton.addEventListener('click', SetText);
 
 
 
+
+
 // increment & decrement counter
 var counterValue = document.getElementById("counter-value");
+var counterText = document.getElementById("counter-text");
 var btnIncrement = document.getElementById("btn-increment");
 var btnDecrement = document.getElementById("btn-decrement");
 var submitButton = document.getElementById("submit-button");
