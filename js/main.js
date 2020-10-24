@@ -105,8 +105,6 @@ saveButton.addEventListener('click', SetText);
 
 
 // increment & decrement counter
-
-
 var counterValue = document.getElementById("counter-value");
 var counterText = document.getElementById("counter-text");
 var btnIncrement = document.getElementById("btn-increment");
@@ -115,6 +113,8 @@ var submitButton = document.getElementById("submit-button");
 var submitButtonStatus = false;
 
 var number = -1;
+
+// var valueHolder = parseInt(counterText.innerHTML);
 
 if (number < 100) {
     number = number + 1;
@@ -126,6 +126,9 @@ btnIncrement.addEventListener("click", function() {
         if (parseInt(counterText.innerHTML) < 100) {
             counterText.innerHTML =
                 parseInt(counterText.innerHTML) + parseInt(counterValue.value);
+            if (counterText.innerHTML > 100) {
+                counterText.innerHTML = 0
+            }
         }
     } else if (submitButtonStatus === false) {
         if (number < 100) {
@@ -148,16 +151,13 @@ btnDecrement.addEventListener("click", function() {
         }
     }
 
-    // if (number > 0) {
-    //     number = number - 1;
-    //     counterText.innerHTML = number;
-    // }
+
+
 });
-
-
 submitButton.addEventListener("click", function() {
-    if (counterValue.value < 100 && counterValue.value > 0) {
+    if (counterValue.value < 100 && counterValue.value >= 0) {
         submitButtonStatus = true;
         counterText.innerHTML = parseInt(counterValue.value);
     }
+
 });
