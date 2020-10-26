@@ -117,7 +117,7 @@ function SubmitChangeColor() {
 
     submitButtonStatus = false;
     if (counterValue.value <= 100 && counterValue.value >= 0) {
-        submitButtonStatus = true;
+        submitButtonStatus = false;
         submitButton.style.backgroundColor = 'black';
     } else if (submitButtonStatus === false) {
         submitButton.style.backgroundColor = 'red';
@@ -132,5 +132,11 @@ submitButton.addEventListener("click", function() {
     if (counterValue.value <= 100 && counterValue.value >= 0) {
         submitButtonStatus = true;
         counterText.innerHTML = parseInt(counterValue.value);
+    }
+});
+
+document.querySelector(".counter-value").addEventListener("keypress", function(evt) {
+    if (evt.which != 8 && evt.which != 0 && evt.which < 48 || evt.which > 57) {
+        evt.preventDefault();
     }
 });
