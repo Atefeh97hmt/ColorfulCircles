@@ -1,7 +1,3 @@
-// window.alert("hello,hope you enjoy");
-
-
-
 // red circle
 document.getElementById("changeGray").onclick = function() {
     document.getElementById("red-circle").style.background = 'gray';
