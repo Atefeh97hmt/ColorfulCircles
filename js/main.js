@@ -154,10 +154,15 @@ btnDecrement.addEventListener("click", function() {
 
 
 });
+
+
 submitButton.addEventListener("click", function() {
-    if (counterValue.value < 100 && counterValue.value >= 0) {
+    if (counterValue.value <= 100 && counterValue.value >= 0) {
         submitButtonStatus = true;
         counterText.innerHTML = parseInt(counterValue.value);
-    }
+    } else if (submitButtonStatus === false) {
+        submitButton.style.backgroundColor = 'red';
+        alert("just in range of 0-100");
 
+    }
 });
