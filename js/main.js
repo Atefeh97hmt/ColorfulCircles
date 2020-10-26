@@ -160,6 +160,7 @@ submitButton.addEventListener("click", function() {
     if (counterValue.value <= 100 && counterValue.value >= 0) {
         submitButtonStatus = true;
         counterText.innerHTML = parseInt(counterValue.value);
+        submitButton.style.backgroundColor = 'black';
     } else if (submitButtonStatus === false) {
         submitButton.style.backgroundColor = 'red';
         alert("just in the range of 0-100");
