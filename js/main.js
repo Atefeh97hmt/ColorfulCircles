@@ -162,7 +162,7 @@ submitButton.addEventListener("click", function() {
         counterText.innerHTML = parseInt(counterValue.value);
     } else if (submitButtonStatus === false) {
         submitButton.style.backgroundColor = 'red';
-        alert("just in range of 0-100");
+        alert("just in the range of 0-100");
 
     }
 });
