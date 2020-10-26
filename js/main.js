@@ -61,45 +61,6 @@ saveButton.addEventListener('click', SetText);
 
 
 
-// increment & decrement counter
-
-// var counterText = document.getElementById("counter-text");
-
-// var btnIncrement = document.getElementById("btn-increment");
-// var btnDecrement = document.getElementById("btn-decrement");
-
-// var number = 4;
-
-// btnIncrement.addEventListener("click", function() {
-
-//     if (number < 100) {
-//         number++;
-//         counterText.innerHTML = number;
-//     }
-
-// });
-
-// btnDecrement.addEventListener("click", function() {
-
-//     if (number > 0) {
-//         number--;
-//         counterText.innerHTML = number;
-//     }
-
-
-// });
-
-
-// var apply = () => {
-//     var submitButton = document.getElementById('submit-button');
-//     let countertext = document.querySelector(".demo");
-//     let btnDecrement = document.getElementById('btn-decrement').value;
-//     let btnincrement = document.getElementById('btn-increment').value;
-
-//     document.getElementById('btn-decrement').value = parseInt(btndecrement) + parseInt(btnincrement);
-// }
-// submitButton.addEventListener('click', apply);
-
 
 
 
@@ -114,7 +75,7 @@ var submitButtonStatus = false;
 
 var number = -1;
 
-// var valueHolder = parseInt(counterText.innerHTML);
+
 
 if (number < 100) {
     number = number + 1;
@@ -156,19 +117,6 @@ btnDecrement.addEventListener("click", function() {
 });
 
 
-
-// submitButton.addEventListener("click", function() {
-//     if (counterValue.value <= 100 && counterValue.value >= 0) {
-//         submitButtonStatus = true;
-//         counterText.innerHTML = parseInt(counterValue.value);
-//         submitButton.style.backgroundColor = 'black';
-//     } else if (submitButtonStatus === false) {
-//         submitButton.style.backgroundColor = 'red';
-//         alert("just in the range of 0-100");
-
-//     }
-// });
-
 function SubmitChangeColor() {
 
     submitButtonStatus = false;
@@ -177,12 +125,10 @@ function SubmitChangeColor() {
         submitButton.style.backgroundColor = 'black';
     } else if (submitButtonStatus === false) {
         submitButton.style.backgroundColor = 'red';
-        // alert("just in the range of 0-100");
+
 
     }
 }
-
-
 
 
 submitButton.addEventListener("click", function() {
