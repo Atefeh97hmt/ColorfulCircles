@@ -146,7 +146,6 @@ function manage() {
     var countervalue = document.getElementById("counter-value");
     var submitbutton = document.getElementById("submit-button");
 
-
     if (countervalue.value == '') {
         submitbutton.disabled = true;
         return false;
