@@ -110,6 +110,7 @@ var counterText = document.getElementById("counter-text");
 var btnIncrement = document.getElementById("btn-increment");
 var btnDecrement = document.getElementById("btn-decrement");
 var submitButton = document.getElementById("submit-button");
+
 var submitButtonStatus = false;
 
 var number = -1;
@@ -155,15 +156,29 @@ btnDecrement.addEventListener("click", function() {
 
 });
 
+// counterValue.onfocus(function() {
+//     if (counterValue.value <= 100 && counterValue.value >= 0) {
+//         submitButtonStatus = true;
+//         counterText.innerHTML = parseInt(counterValue.value);
+//         submitButton.style.backgroundColor = 'black';
+//     } else if (submitButtonStatus === false) {
+//         submitButton.style.backgroundColor = 'red';
+//         alert("just in the range of 0-100");
 
-submitButton.addEventListener("click", function() {
+//     }
+// });
+
+
+function SubmitChangeColor() {
+
+    submitButtonStatus = false;
     if (counterValue.value <= 100 && counterValue.value >= 0) {
         submitButtonStatus = true;
         counterText.innerHTML = parseInt(counterValue.value);
         submitButton.style.backgroundColor = 'black';
     } else if (submitButtonStatus === false) {
         submitButton.style.backgroundColor = 'red';
-        alert("just in the range of 0-100");
+        // alert("just in the range of 0-100");
 
     }
-});
+}
