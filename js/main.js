@@ -4,8 +4,6 @@ document.getElementById("changeGray").onclick = function() {
 }
 
 
-
-
 //blue circle
 document.getElementById("changePink").onclick = function() {
     document.getElementById("blue-circle").style.background = "deeppink";
@@ -17,7 +15,6 @@ document.getElementById("changeGold").onclick = function() {
     document.getElementById("green-circle").style.background = 'gold';
 
 }
-
 
 
 //rectangle width & height set
@@ -38,9 +35,6 @@ var applyValues = () => {
 changeButton.addEventListener('click', applyValues);
 
 
-
-
-
 // text-input
 
 var textInput = document.getElementById('text-input');
@@ -54,13 +48,6 @@ var SetText = () => {
 saveButton.addEventListener('click', SetText);
 
 
-
-
-
-
-
-
-
 // increment & decrement counter
 var counterValue = document.getElementById("counter-value");
 var counterText = document.getElementById("counter-text");
@@ -70,8 +57,6 @@ var submitButton = document.getElementById("submit-button");
 var submitButtonStatus = false;
 
 var number = -1;
-
-
 
 if (number < 100) {
     number = number + 1;
@@ -107,9 +92,6 @@ btnDecrement.addEventListener("click", function() {
             counterText.innerHTML = number;
         }
     }
-
-
-
 });
 
 
@@ -124,8 +106,6 @@ function SubmitChangeColor() {
     }
 }
 
-
-
 submitButton.addEventListener("click", function() {
 
     if (counterValue.value <= 100 && counterValue.value >= 0) {
@@ -134,12 +114,6 @@ submitButton.addEventListener("click", function() {
     }
 
 });
-
-
-
-
-
-
 
 function manage() {
 
@@ -154,13 +128,6 @@ function manage() {
     }
 
 }
-
-
-
-
-
-
-
 
 document.querySelector(".counter-value").addEventListener("keypress", function(evt) {
     if (evt.which != 8 && evt.which != 0 && evt.which < 48 || evt.which > 57) {
